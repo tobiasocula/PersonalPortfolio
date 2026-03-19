@@ -1,0 +1,8 @@
+-Compute covariance matrix and correlation between assets
+-PNL distribution function using histogram of returns
+
+OPTIMALIZATION:
+-Cvar_alpha
+-max_w{w^T*mu} subject to Cvar_alpha(w) <= c and volatility <= sigma^2
+-max_w{w^T*mu - lambda*Cvar_alpha(w)}
+-max_w{w^T*mu - lambda*Cvar_alpha(w) - gamma*w^T*Sigma*w} (added volatility)
