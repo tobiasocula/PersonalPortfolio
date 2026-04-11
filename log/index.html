@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../execution_plan/">
+        <link rel="prev" href="../general_comparisation/">
       
       
-        <link rel="next" href="../log/">
+        <link rel="next" href="../parameter_study/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>General comparisation - NAME OF PROJECT</title>
+        <title>Log - NAME OF PROJECT</title>
       
     
     
@@ -63,11 +63,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#mean-weights-generated" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -100,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              General comparisation
+              Log
             
           </span>
         </div>
@@ -247,35 +242,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    General comparisation
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../general_comparisation/" class="md-nav__link">
         
   
   
@@ -291,35 +261,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#mean-weights-generated" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Mean weights generated
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -328,10 +269,17 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../log/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -347,6 +295,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -450,25 +399,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#mean-weights-generated" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Mean weights generated
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -484,126 +414,20 @@
 
 
 
-  <h1>General comparisation</h1>
+  <h1>Log</h1>
 
-<table border="1" style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr>
-      <th>Strategy</th>
-      <th>Sharpes</th>
-      <th>Sortinos</th>
-      <th>Vars</th>
-      <th>Cvars</th>
-      <th>MeanReturn</th>
-      <th>Highest maximum drawdowns</th>
-      <th>Mean maximum drawdowns</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Equal weights</td>
-      <td>0.642599</td>
-      <td>0.875787</td>
-      <td>-0.007780</td>
-      <td>-0.013495</td>
-      <td>0.000373</td>
-      <td>-0.281273</td>
-      <td>-0.127660</td>
-    </tr>
-    <tr>
-      <td>Return + CVaR</td>
-      <td>0.728539</td>
-      <td>0.966650</td>
-      <td>-0.006512</td>
-      <td>-0.011341</td>
-      <td>0.000365</td>
-      <td>-0.292783</td>
-      <td>-0.125554</td>
-    </tr>
-    <tr>
-      <td>Risk Parity</td>
-      <td>0.293067</td>
-      <td>0.384390</td>
-      <td>-0.003458</td>
-      <td>-0.005998</td>
-      <td>0.000166</td>
-      <td>-0.281273</td>
-      <td>-0.127660</td>
-    </tr>
-    <tr>
-      <td>With factors</td>
-      <td>0.728557</td>
-      <td>0.966685</td>
-      <td>-0.006512</td>
-      <td>-0.011341</td>
-      <td>0.000365</td>
-      <td>-0.292782</td>
-      <td>-0.125554</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="mean-weights-generated">Mean weights generated</h2>
-<table border="1" style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr>
-      <th>Asset</th>
-      <th>Risk adj. Returns + CVaR + Other optimizations</th>
-      <th>Including Factor Returns</th>
-      <th>Risk Parity</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>SNP</td>
-      <td>0.12375747</td>
-      <td>0.12375984</td>
-      <td>0.05555577</td>
-    </tr>
-    <tr>
-      <td>China</td>
-      <td>0.08672562</td>
-      <td>0.08672643</td>
-      <td>0.05555577</td>
-    </tr>
-    <tr>
-      <td>EM</td>
-      <td>0.09112410</td>
-      <td>0.09112479</td>
-      <td>0.05555577</td>
-    </tr>
-    <tr>
-      <td>Gold</td>
-      <td>0.17285610</td>
-      <td>0.17285040</td>
-      <td>0.05555577</td>
-    </tr>
-    <tr>
-      <td>India</td>
-      <td>0.10770007</td>
-      <td>0.10770182</td>
-      <td>0.05555577</td>
-    </tr>
-    <tr>
-      <td>MSCI-Europe</td>
-      <td>0.09540281</td>
-      <td>0.09540524</td>
-      <td>0.05555577</td>
-    </tr>
-    <tr>
-      <td>SmallcapEurope</td>
-      <td>0.09551316</td>
-      <td>0.09551208</td>
-      <td>0.05555577</td>
-    </tr>
-    <tr>
-      <td>Cash</td>
-      <td>0.22692055</td>
-      <td>0.22691947</td>
-      <td>0.61110961</td>
-    </tr>
-  </tbody>
-</table>
+<p>SHARE LOG
+date,cnya,cspx,eimi,inr,sxrj,xad5,xmeu,cash
+09-04-26,14711,199,2164,4309,273,444,1109,X</p>
+<p>PORTFOLIO VALUE LOG
+date,eur
+09-04-26,1066220</p>
+<p>PRICES LOG
+date,cnya,cspx,eimi,inr,sxrj,xad5,xmeu,cash
+09-04-26,5.8526,348.0407,42.0313,24.9278,625.7120,392.6515,111.5792,X</p>
+<p>WEIGHTS LOG
+date,cnya,cspx,eimi,inr,sxrj,xad5,xmeu,cash
+09-04-26,0.1239,0.0868,0.0912,0.1730,0.1078,0.0955,0.0956,0.2263</p>
 
 
 

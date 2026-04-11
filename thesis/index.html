@@ -201,7 +201,34 @@
   <span class="md-ellipsis">
     
   
-    Welcome to MkDocs
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../execution_plan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Execution plan
   
 
     
@@ -248,14 +275,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../live_trading_log/" class="md-nav__link">
+      <a href="../log/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Live trading log
+    Log
   
 
     
@@ -616,6 +643,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#expected-behavior-by-regime" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Expected Behavior By Regime
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -880,6 +918,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#expected-behavior-by-regime" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Expected Behavior By Regime
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1033,6 +1082,38 @@ They are explicitly included so that the strategy is evaluated on net performanc
 -Accounting for somewhat recent momentum and volume indicators</p>
 <h2 id="limitations-and-comparison-vs-equal-weights">Limitations and comparison vs. Equal weights</h2>
 <p>It is worth noting that while the strategy I have constructed can definitely outperform on a risk-adjusted basis, it is still possible that equal weights will outperform (although slightly) in the case of bear-markets. This is most likely due to optimalizations the procedure makes that don't account enough for the potential large market downturns. It is possible to reduce this inherent shortcoming of the strategy, but not without sacrificing risk-adjusted returns, which is ultimately what this portfolio is built for.</p>
+<h2 id="expected-behavior-by-regime">Expected Behavior By Regime</h2>
+<table>
+<thead>
+<tr>
+<th>Market Regime</th>
+<th>Strategy Behavior</th>
+<th>Rationale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Normal</strong></td>
+<td>Outperforms equal weight</td>
+<td>Momentum works</td>
+</tr>
+<tr>
+<td><strong>Bear</strong></td>
+<td>Matches equal weight or sometimes underperforms</td>
+<td>Safety mechanisms trigger</td>
+</tr>
+<tr>
+<td><strong>High inflation</strong></td>
+<td>Gold overweight</td>
+<td>Commodity hedge</td>
+</tr>
+<tr>
+<td><strong>Growth</strong></td>
+<td>US/India overweight</td>
+<td>Momentum signal</td>
+</tr>
+</tbody>
+</table>
 
 
 
