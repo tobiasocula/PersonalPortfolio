@@ -1,3 +1,6 @@
+# NOT YET FINISHED
+
+
 ## Execution Framework
 
 The portfolio is implemented through a **weekly monitoring + quarterly rebalancing** cycle that balances signal responsiveness with transaction cost discipline. This approach ensures the strategy remains adaptive to new information without excessive turnover.
